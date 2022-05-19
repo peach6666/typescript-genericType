@@ -1,0 +1,25 @@
+{
+    "compilerOptions":{
+        "target": "es2020",
+        //TS編譯後輸出的目錄
+        "outDir": "./dist",
+        //TS要編譯的目錄
+        "rootDir": "./src",
+        //有報錯就不編譯
+        "noEmitOnError":true,
+        //生成原始碼對照表
+        "sourceMap": true,
+        //允許import module from 'cjs檔'
+        "esModuleInterop": true,
+        //編譯出.d.ts檔，內有型別宣告
+        "declaration": true,
+        //禁止型別推論出any型別
+        "noImplicitAny": true,
+        //要求編譯器禁止把null跟undefined值指派給其他型別
+        "strictNullChecks": true,
+        //禁止隱性傳回undefined值，所有執行途徑都該帶return
+        "noImplicitReturns": true,
+        //停用額外屬性檢查，避免物件實字中若有物件型別別名未定義的屬性時會報錯
+        "suppressExcessPropertyErrors": true
+    }
+}
